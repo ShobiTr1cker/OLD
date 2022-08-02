@@ -810,7 +810,7 @@ class Main:
 
 		print(logo)
 
-		os.system('xdg-open https://www.facebook.com/profile.php?id=100001703320893')
+		os.system('xdg-open https://youtube.com/channel/UCY5JxJv23l68mkcal--r6ug')
 
 		print("\n [1] File Cloning")
 
